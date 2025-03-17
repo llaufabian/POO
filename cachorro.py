@@ -17,11 +17,11 @@ class Cachorro:
         print(f"{self.nome} está acordado!")
 
     def brincar(self):
-        if self.acordado:
+            if self.acordado and self.energia >= 20:
             self.feliz = True
             self.energia -= 20
             print(f"{self.nome} brincou e está feliz agora!")
-        elif self.energia < 20:
+            else:
             print(f"{self.nome} está cansado demais para brincar!")
         else:
             print(f"{self.nome} não pode fazer isso, ele está dormindo!")
