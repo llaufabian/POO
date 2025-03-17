@@ -21,10 +21,10 @@ class Cachorro:
                 self.feliz = True
                 self.energia -= 20
                 print(f"{self.nome} brincou e está feliz agora!")
-            else:
+            elif self.energia < 20:
                 print(f"{self.nome} está cansado demais para brincar!")
-        else:
-            print(f"{self.nome} não pode fazer isso, ele está dormindo!")
+            else:
+               print(f"{self.nome} não pode fazer isso, ele está dormindo!")
 
     def comer(self):
         if self.acordado:
