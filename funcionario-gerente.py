@@ -1,3 +1,5 @@
+//aula sobre herança
+
 class Funcionario:
     def _init_(self, nome, cpf, salario):
         self.__nome = nome
